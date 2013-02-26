@@ -3,7 +3,8 @@
 Thread: 
 
 - ordered events
-- $$ a0 \\rightarrow a1 \\rightarrow a2 \\rightarrow … $$
+- $$ a0 \\rightarrow a1 \\rightarrow a2 \\rightarrow … $$ 
+    - (github-math: ![equation](http://latex.codecogs.com/gif.latex?a0%20%5Crightarrow%20a1%20%5Crightarrow%20a2%20%5Crightarrow%20...))
 
 Thread State + Local Variables
 System State = Global Variables + Union (thread states)
@@ -17,6 +18,8 @@ Precedence: A0 -> B0 (end of A0 before start of B0)
 Critical sections should either
 
 $$ CS_i^k \\rightarrow CS_j^k  \\oplus  CS_j^k \\rightarrow CS_i^k $$
+
+(github-math: ![equation](http://latex.codecogs.com/gif.latex?CS_i%5Ek%20%5Crightarrow%20CS_j%5Ek%20%20%5Coplus%20%20CS_j%5Ek%20%5Crightarrow%20CS_i%5Ek)) 
 
 ## 2-THREAD LOCK
 
