@@ -1,7 +1,7 @@
 Critical Section 'everything' repository
 ==========
 ## 19 maart
-De opgaven van de vorige keer waren af. Nu verder met:
+Nu verder met:
 * 9
 * 10
 
