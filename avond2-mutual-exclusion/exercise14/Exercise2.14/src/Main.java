@@ -3,8 +3,9 @@ public class Main {
 	public static void main(String[] args) throws InterruptedException {
 		System.out.println("Hello worlds");
 		
-		int N = 10;
-		Lock lock = new Filter(N);
+		int N = 20;
+		int ℓ = 4;
+		Lock lock = new MultiFilter(N, ℓ);
 		Thread[] threads = new Thread[N];
 		
 		for (int i = 0; i < N; i++) {

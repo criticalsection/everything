@@ -1,14 +1,17 @@
 
-public class Filter extends Lock {
+public class MultiFilter extends Lock {
 	final int N;
+	final int ℓ;
+	
 	volatile int[] level;
 	volatile int[] victim;
 	
-	public Filter(int n) {
-		N = n;
-		level = new int[n];
-		victim = new int[n];
-		for (int i = 0; i < n; i++) {
+	public MultiFilter(int N, int ℓ) {
+		this.N = N;
+		this.ℓ = ℓ;
+		level = new int[N];
+		victim = new int[N];
+		for (int i = 0; i < N; i++) {
 			level[i] = 0;
 		}
 	}
@@ -16,7 +19,7 @@ public class Filter extends Lock {
 	@Override
 	public void lock(int threadId) {
 		int me = threadId;
-		for (int i = 1; i < N; i++) {
+		for (int i = 1; i < N-ℓ+1; i++) {
 			level[me] = i;
 			sleep();
 			victim[i] = me;
@@ -26,9 +29,13 @@ public class Filter extends Lock {
 	}
 	
 	private boolean exist(int me, int i) {
+		int num = 0;
 		for (int k = 0; k < N; k++) {
 			if (k != me && level[k] >= i) {
-				return true;
+				num++;
+				if (num == ℓ) {
+					return true;
+				}
 			}
 			sleep();
 		}
