@@ -1,5 +1,5 @@
 
-public class Filter implements Lock {
+public class Filter extends Lock {
 	final int N;
 	volatile int[] level;
 	volatile int[] victim;
@@ -18,7 +18,9 @@ public class Filter implements Lock {
 		int me = threadId;
 		for (int i = 1; i < N; i++) {
 			level[me] = i;
+			sleep();
 			victim[i] = me;
+			sleep();
 			while (exist(me, i) && victim[i] == me) {}
 		}
 	}
@@ -28,6 +30,7 @@ public class Filter implements Lock {
 			if (k != me && level[k] >= i) {
 				return true;
 			}
+			sleep();
 		}
 		return false;
 	}
