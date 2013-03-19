@@ -14,22 +14,22 @@ public class Task implements Runnable {
 	public void run() {
 		log("Entering run");
 		try {
-			log("* Locking");
+			log("Locking");
 			lock.lock(id);
 			int sleep = new Random().nextInt(1000);
-			log("Entered CRITICAL SECTION!! Sleeping " + sleep + "ms");
+			log("Entered CRITICAL SECTION!! Sleeping " + String.format("%4d", sleep) + "ms        ---->");
 			Thread.sleep(sleep);
 		}
 		catch (InterruptedException ignored) {
 		}
 		finally {
-			log("* Unlocking");
+			log("Unlocking                                                        <----");
 			lock.unlock(id);
 		}
 		log("Exiting run");
 	}
 	
 	private void log(String s) {
-		System.out.println("Thread " + id + " " + s);
+		System.out.println("Thread " + String.format("%3d", id) + " " + s);
 	}
 }
