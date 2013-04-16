@@ -1,7 +1,7 @@
 Critical Section studiegroep
 ==========
 Deze studiegroep behandelt de stof uit het boek [The Art of Multiprocessor
-Programming](amzn.com/0123973376) van Maurice Helihy en Nir Shavit. Iedere
+Programming](http://amzn.com/0123973376) van Maurice Helihy en Nir Shavit. Iedere
 avond worden er 1 of meer paragrafen gepresenteerd, waarna we de bijbehorende
 opgaven gaan maken. Deze worden omgezet in programmeeropdrachten als we daar
 zin in hebben. De nadruk ligt op het hebben van fun; niet op het maken van
