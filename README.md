@@ -1,12 +1,19 @@
 Critical Section 'everything' repository
 ==========
+## 16 april
+Nu verder met:
+
+* 20
+
 ## 19 maart
 Nu verder met:
+
 * 9
 * 10
 
 ## 26 februari
 We beginnen met de volgende opgaven uit hoofdstuk 2
+
 * 11 Kees-Jan en Albert
 * 12 Al opgelost tijdens presentatie
 * 13 Joris en Frank
