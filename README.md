@@ -1,14 +1,56 @@
 Critical Section 'everything' repository
 ==========
-## 19 maart
-Nu verder met:
-* 9
-* 10
+Avond 4 - 16 april
+--------
+Frank heeft paragraaf 2.7 gepresenteerd:
 
-## 26 februari
-We beginnen met de volgende opgaven uit hoofdstuk 2
-* 11 Kees-Jan en Albert
-* 12 Al opgelost tijdens presentatie
-* 13 Joris en Frank
-* 14 Jan en Dwight
-* 15 Rico en Jan Willem
+- bounded timestamps
+
+### Opgaven
+
+Opgaven 18, 19 en 20 horen bij de stof.
+
+- 20 door Jan en Tom
+
+Avond 3 - 19 maart
+--------
+Jan heeft paragraaf 2.6 gepresenteerd:
+
+- Lamport's Bakery Algorithm
+
+### Opgaven
+
+- 9
+- 10
+
+Avond 2 - 26 februari
+-----------
+Joris heeft hoofdstuk 2 (principles of mutual exclusion), paragrafen 1 t/m 5 gepresenteerd:
+
+- reasoning about time
+- critical sections
+- 2-thread solutions (Peterson lock)
+- filter lock
+- fairness
+ 
+### Opgaven
+
+- 11 door Kees-Jan en Albert
+- 12 is al opgelost tijdens presentatie
+- 13 door Joris en Frank
+- 14 door Jan en Dwight
+- 15 door Rico en Jan Willem
+
+Avond 1 - 5 februari
+----------
+De kick-off meeting! Hoofdstuk 1 (introduction) is gepresenteerd door Frank:
+
+- shared objects and synchronization
+- properties of mutual exclusion
+- producer-consumer problem
+- readers-writers problem
+- harsh realities of parallelization
+- parallel programming
+
+### Opgaven
+Opgaven 1 t/m 8 horen bij de stof, maar er zijn er geen gemaakt.

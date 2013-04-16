@@ -4,3 +4,4 @@ lib
 bin
 .metadata
 private
+*.swp
