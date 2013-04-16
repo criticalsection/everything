@@ -1,5 +1,21 @@
-Critical Section 'everything' repository
+Critical Section studiegroep
 ==========
+Deze studiegroep behandelt de stof uit het boek [The Art of Multiprocessor
+Programming](amzn.com/0123973376) van Maurice Helihy en Nir Shavit. Iedere
+avond worden er 1 of meer paragrafen gepresenteerd, waarna we de bijbehorende
+opgaven gaan maken. Deze worden omgezet in programmeeropdrachten als we daar
+zin in hebben. De nadruk ligt op het hebben van fun; niet op het maken van
+*alle* opgaven.
+
+### Huishoudelijke mededelingen
+
+- Meetings zijn eens in de 3 weken.
+- Deze git repository wordt beheerd door Frank en Jan.
+- Presentaties zijn te vinden op de [companion site van de revised
+reprint](http://www.elsevierdirect.com/v2/companion.jsp?ISBN=9780123973375).
+- Code uit het boek is te vinden op de [originele companion
+site](http://www.elsevierdirect.com/v2/companion.jsp?ISBN=9780123705914).
+
 Avond 4 - 16 april
 --------
 Frank heeft paragraaf 2.7 gepresenteerd:
@@ -20,8 +36,8 @@ Jan heeft paragraaf 2.6 gepresenteerd:
 
 ### Opgaven
 
-- 9
-- 10
+- 9 door Roy en Jan
+- 10 door Frank en Joris
 
 Avond 2 - 26 februari
 -----------
